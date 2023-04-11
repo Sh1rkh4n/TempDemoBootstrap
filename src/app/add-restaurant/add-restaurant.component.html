@@ -1,1 +1,44 @@
-<p>add-restaurant works!</p>
+<div class="container-fluid allRestaurant mt-5 h-100 d-flex align-items-center justify-content-center">
+  <div class="card border-col">
+    <h3 style="text-align: center; margin-top: 20px">Add Restaurant Details Here</h3>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12">
+          <label class="form-label m-0">Name</label>
+          <input type="text" class="form-control" placeholder="Restaurant Name" aria-label="Name" />
+        </div>
+        <div class="col-12">
+          <label class="form-label m-0 mt-2">Owner</label>
+          <input type="text" class="form-control" placeholder="Owner of restaurant" aria-label="Owner" />
+        </div>
+        <div class="col-12">
+          <label class="form-label m-0 mt-2">Mobile</label>
+          <input type="text" class="form-control" placeholder="Contact Mobile Number" aria-label="Mobile" />
+        </div>
+        <div class="col-12">
+          <label class="form-label m-0 mt-2">Email</label>
+          <input type="text" class="form-control" placeholder="Email Address" aria-label="Email" />
+        </div>
+        <div class="col-12">
+          <label class="form-label m-0 mt-2">Location</label>
+          <input type="text" class="form-control" placeholder="Restaurant Location" aria-label="Location" />
+        </div>
+        <div class="col-12">
+          <label class="form-label m-0 mt-2">Rating</label>
+          <input type="text" class="form-control" placeholder="Rating" aria-label="Rating" />
+        </div>
+        <div>
+          <button type="button" class="btn btn-warning mt-3 shadow-custom btn-ripple">
+            <!-- routerLink="/" -->
+            Add New Records
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-primary ripple-effect" #button (click)="onClick($event)">
+  <span class="ripple-effect"></span>
+  Click me!
+</button>
