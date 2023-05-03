@@ -14,13 +14,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AddRestaurantComponent,
     EditRestaurantComponent,
     RemRestaurantComponent,
-    DashboardComponent
+    DashboardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
