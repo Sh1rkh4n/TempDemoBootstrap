@@ -16,48 +16,20 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Restaurant 1</td>
-        <td>Owner 1</td>
-        <td>+3650000</td>
-        <td>email1@email.com</td>
-        <td>Location 1</td>
-        <td>5</td>
+      <tr *ngFor="let rest of restaurants">
+        <td>{{ rest.id }}</td>
+        <td>{{ rest.name }}</td>
+        <td>{{ rest.owner }}</td>
+        <td>{{ rest.mobile }}</td>
+        <td>{{ rest.email }}</td>
+        <td>{{ rest.location }}</td>
+        <td>{{ rest.rating }}</td>
         <td>
           <div>
-            <i class="fa fa-edit"></i>
-            <i class="fa fa-trash-can"></i>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Restaurant 2</td>
-        <td>Owner 2</td>
-        <td>+3650000</td>
-        <td>email1@email.com</td>
-        <td>Location 2</td>
-        <td>3</td>
-        <td>
-          <div>
-            <i class="fa fa-edit"></i>
-            <i class="fa fa-trash-can"></i>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Restaurant 3</td>
-        <td>Owner 3</td>
-        <td>+3650000</td>
-        <td>email1@email.com</td>
-        <td>Location 3</td>
-        <td>4</td>
-        <td>
-          <div>
-            <i class="fa fa-edit"></i>
-            <i class="fa fa-trash-can"></i>
+            <a [routerLink]="['/edit-restaurant', rest.id]"> <i class="fa fa-edit"></i></a>
+
+            <!-- <i class="fa fa-trash-can btn-clickable" (click)="openDeleteModal()"></i> -->
+            <i class="fa fa-trash-can btn-clickable"></i>
           </div>
         </td>
       </tr>
